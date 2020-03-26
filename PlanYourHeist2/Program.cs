@@ -13,12 +13,10 @@ namespace PlanYourHeist2
             var burglarName = Console.ReadLine();
 
             Console.WriteLine($"{burglarName}. Good choice. Now, what is {burglarName}'s skill level? This number cannot be negative. Otherwise, this value will be randomly assigned.");
-            var skill = Console.ReadLine();
-            var numSkill = Int32.Parse(skill);
+            var numSkill = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine($"Next, what is {burglarName}'s courage factor? This number must be between 0.0 and 2.0. Otherwise, it will be randomly assigned.");
-            var courage = Console.ReadLine();
-            var numCourage = Convert.ToDouble(courage);
+            var numCourage = Convert.ToDouble(Console.ReadLine());
 
             var wholeMember = new TeamMember(burglarName, numSkill, numCourage);
 

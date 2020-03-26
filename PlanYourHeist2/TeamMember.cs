@@ -39,7 +39,7 @@ namespace PlanYourHeist2
             }
             set
             {
-                if (value > 0.0 && value < 2.0)
+                if (value >= 0.0 && value <= 2.0)
                 {
                     _courageFactor = value;
                 }
